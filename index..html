@@ -16,23 +16,27 @@
 <body>
   <!---navigation--->
 
-  <div class="nav-container">
-    <div class="logo">
-      <img src="images/p_photo.jpeg" alt="" />
-      <p>ORTFOLIO</p>
-    </div>
 
-    <div class="nav-links">
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Project</a>
-      <a href="#" s>Contact</a>
+
+
+
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/p_photo.jpeg" alt="" />
+        <p>ORTFOLIO</p>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
       <button class="mobile-menu">☰</button>
     </div>
+  </nav>
 
-
-
-  </div>
 
 
 
@@ -45,10 +49,7 @@
 
       <p>CSE Student building production-ready web apps. Recently shipped <strong>Dashly</strong> - a full-stack
         productivity dashboard. </p>
-      <div class="hero-buttton">
-        <a href="#projects" class="btn-primary"> view Projects</a>
-        <a href="#contact" class="btn-secondary">Get In Touch</a>
-      </div>
+       
       <div class="social-links">
         <a href="https://github.com/syad0987"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/sudha-yadav-3431212b9/"><i class="fa-brands fa-linkedin"></i></a>
@@ -61,7 +62,7 @@
   </section>
 
   <!----About-->
-  <section class="about">
+  <section id="about"  class="about">
     <div class="container">
       <div class="section-header">
         <h2>About <span>Me</span></h2>
@@ -101,7 +102,7 @@
   </section>
 
   <!----skills--->
-  <section class="skills">
+  <section id="skills" class="skills">
     <div class="container">
       <div class="section-header">
         <h2>My <span>Skills</span></h2>
@@ -146,7 +147,7 @@
 
 
   <!----project-->
-  <section class="projects">
+  <section  id="projects" class="projects">
     <div class="container">
       <div class="section-header">
         <h2>My <span>Projects</span></h2>
@@ -173,8 +174,8 @@
               <span>Vite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/syad0987/dashly" class="btn btn-primary" target="_blank">GitHub</a>
-              <a href="#" class="btn btn-secondary" target="_blank">Live Demo</a>
+              <a href="https://github.com/syad0987/Focusflow-dashboard-" class="btn btn-primary" target="_blank">GitHub</a>
+              <a href="https://syad0987.github.io/Focusflow-dashboard-/" class="btn btn-secondary" target="_blank">Live Demo</a>
             </div>
           </div>
         </div>
@@ -199,8 +200,8 @@
               <span>Grid/Flexbox</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/syad0987/portfolio" class="btn btn-primary" target="_blank">View Code</a>
-              <a href="#" class="btn btn-secondary" target="_blank">Live Site</a>
+              <a href="https://github.com/syad0987/My-portfolio" class="btn btn-primary" target="_blank">View Code</a>
+              <a href="https://syad0987.github.io/My-portfolio/" class="btn btn-secondary" target="_blank">Live Site</a>
             </div>
           </div>
         </div>
@@ -224,8 +225,8 @@
               <span>CSS3</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/syad0987/voice-todo" class="btn btn-primary" target="_blank">View Code</a>
-              <a href="#" class="btn btn-secondary" target="_blank">Live Demo</a>
+              <a href="https://github.com/syad0987/-Voice-Controlled-To-Do-List" class="btn btn-primary" target="_blank">View Code</a>
+              <a href="https://syad0987.github.io/-Voice-Controlled-To-Do-List/" class="btn btn-secondary" target="_blank">Live Demo</a>
             </div>
           </div>
         </div>
@@ -237,77 +238,79 @@
   </section>
 
   <!-----contact-->
- <section id="contact" class="contact">
-  <div class="container">
-    <div class="section-header">
-      <h2>Contact <span>Me</span></h2>
-    </div>
-
-    <div class="contact-content">
-      <!-- Left text -->
-      <div class="contact-info">
-        <h3>Let's Work Together</h3>
-        <p>Open to internships, web dev projects, and collaborations. If you like Dashly, Focusfl, or my portfolio, feel free to reach out.</p>
-        <p><strong>Email:</strong> sudha@example.com</p>
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact <span>Me</span></h2>
       </div>
 
-      <!-- Right form -->
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="your@email.com" required>
-          </div>
+      <div class="contact-content">
+        <!-- Left text -->
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>Open to internships, web dev projects, and collaborations. If you like Dashly, my portfolio, feel free to
+            reach out.</p>
+          <p><strong>Email:</strong> sudha0987yad@gmail,com</p>
         </div>
 
-        <div class="form-group full">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
-        </div>
+        <!-- Right form -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+          <div class="form-group full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h3>Sudha Yadav</h3>
-        <p>CSE Student & Web Developer</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Sudha Yadav</h3>
+          <p>CSE Student & Web Developer</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/syad0987" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/sudha-yadav-3431212b9/" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Resume</a>
+        </div>
       </div>
-      
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://github.com/syad0987" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/sudha-yadav-3431212b9/" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">Resume</a>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sudha Yadav. Built with HTML, CSS & JavaScript. 🚀</p>
       </div>
     </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Sudha Yadav. Built with HTML, CSS & JavaScript. 🚀</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
 
-   
+
 
   <script src="script.js"></script>
 </body>
